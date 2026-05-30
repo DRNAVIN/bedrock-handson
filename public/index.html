@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Bedrock Node.js Demo</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">AWS Bedrock + Node.js</p>
+          <h1>Generate a response with Amazon Nova Micro</h1>
+          <p class="subtitle">
+            Enter a prompt, send it to Amazon Bedrock, and view the generated response.
+          </p>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Prompt generator">
+        <form id="prompt-form" class="prompt-panel">
+          <label for="prompt">Prompt</label>
+          <textarea
+            id="prompt"
+            name="prompt"
+            rows="8"
+            maxlength="4000"
+            placeholder="Example: Explain Amazon Bedrock to a beginner in five bullet points."
+            required
+          ></textarea>
+          <div class="actions">
+            <span id="char-count">0 / 4000</span>
+            <button id="generate-button" type="submit">Generate</button>
+          </div>
+        </form>
+
+        <article class="response-panel" aria-live="polite">
+          <div class="response-header">
+            <h2>Response</h2>
+            <span id="status-text">Ready</span>
+          </div>
+          <pre id="response-output">Your generated response will appear here.</pre>
+        </article>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

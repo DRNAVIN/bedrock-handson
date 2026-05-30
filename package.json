@@ -1,0 +1,27 @@
+{
+  "name": "aws-bedrock-nodejs-hands-on",
+  "version": "1.0.0",
+  "description": "Beginner-friendly Node.js web app that invokes Amazon Bedrock from an Amazon Linux 2023 EC2 instance.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "aws",
+    "bedrock",
+    "nodejs",
+    "express",
+    "nova"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.835.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
